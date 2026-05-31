@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap One Page</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+  <style>
+    /* KOHEI の好みに合わせて最小限の調整 */
+    .hero {
+      padding: 120px 0;
+      background: #f8f9fa;
+      text-align: center;
+    }
+    .title {
+      display: inline-block;
+      border-radius: 8px;
+    }
+    .service-icon {
+      font-size: 40px;
+      margin-bottom: 15px;
+      color: #0d6efd;
+    }
+    img:hover {
+      transform: scale(1.03);
+      transition: 0.3s ease;
+    }
+    footer {
+      padding: 20px 0;
+      background: #f1f1f1;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ナビバー -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">MySite</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#hero">TOP</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">SKILLS</a></li>
+          <li class="nav-item"><a class="nav-link" href="#works">WORKS</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ヒーロー -->
+  <section id="hero" class="hero">
+    <div class="container">
+      <h1 class="display-4 fw-bold">GOTO KOHEI</br>ポートフォリオサイト</h1>
+      <p class="lead mt-3">今までに開発した成果物を公開しています</p>
+    </div>
+  </section>
+
+  <!-- スキル -->
+  <section id="skills" class="py-5">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="title text-center mb-5 fw-bold bg-secondary text-white py-3 px-4 mx-auto">SKILLS</h2>
+      </div>
+
+      <div class="row text-center">
+        <div class="col-sm-6 mb-4">
+          <div class="service-icon">💡</div>
+          <h4 class="fw-bold">フロントエンド</h4>
+          <p>HTML , CSS , JavaScript , React , Next.js , JQuery</p>
+        </div>
+
+        <div class="col-sm-6 mb-4">
+          <div class="service-icon">⚙️</div>
+          <h4 class="fw-bold">バックエンド</h4>
+          <p>PHP , Node.js</p>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-sm-6 mb-4">
+          <div class="service-icon">💿</div>
+          <h4 class="fw-bold">データベース</h4>
+          <p>PostgreSQL , Supabase</p>
+        </div>
+        <div class="col-sm-6 mb-4">
+          <div class="service-icon">🛣</div>
+          <h4 class="fw-bold">インフラ</h4>
+          <p>GitHub , Vercel</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- works -->
+  <section id="works" class="py-5">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="title text-center mb-5 fw-bold bg-secondary text-white py-3 px-4 mx-auto">WORKS</h2>
+      </div>
+
+      <div class="row my-5 pb-5">
+          <div class="col-sm-6">
+              <h3 class="text-center">フォト・ポートフォリオ</h3>
+              <p>依頼者の写真を公開するためのポートフォリオサイトです。</br>
+                  依頼者の要望で写真以外の要素はあまりないシンプルなデザインになっています。</br>
+                  サーバーにあるフォルダから写真を取ってきて動的に表示しています。</br>
+                  画像のサイズ（横長、縦長）が混在するフォルダの中から、横長同士、縦長同士で並べて表示することで余白ができないようにしています。
+              </p>
+              <h5 class="fw-bold">技術スタック</h5>
+              <p class="mt-3">
+                  フロントエンド：HTML,CSS,JavaScript,JQuery<br>
+                  バックエンド：PHP<br>
+                  インフラ：さくらのレンタルサーバー
+              </p>
+          </div>
+          <div class="col-sm-6 d-flex justify-content-center align-items-center">
+              <a href="https://gtpht.net" target="_blank">
+                  <img src="img/スクリーンショット 2026-05-31 125822.png" 
+                      alt="写真用ポートフォリオサイト" 
+                      class="img-fluid rounded shadow-sm">
+              </a>
+          </div>
+      </div>
+
+      <div class="row my-5 pb-5">
+          <div class="col-sm-6">
+              <h3 class="text-center">江本梨園・サンプルサイト</h3>
+              <p>梨園を経営している親族へのホームページリニューアル案として、トップページ、梨園の紹介、販売品種、購入ページ、お問い合わせの5ページを制作しました。<br>
+                  梨園の雰囲気が伝わるように写真を効果的に配置することと、読みやすい文章の配置を心がけました。<br>
+              </p>
+
+              <h5 class="fw-bold">技術スタック</h5>
+              <p class="mt-3">
+                  フロントエンド：HTML,CSS,Typescript,React,Next.js<br>
+                  バックエンド：Node.js<br>
+                  インフラ：GitHub,Vercel
+              </p>
+          </div>
+          <div class="col-sm-6 d-flex justify-content-center align-items-center">
+              <a href="https://sample-site-one-psi.vercel.app" target="_blank">
+                  <img src="img/スクリーンショット 2026-05-31 130152.png" 
+                      alt="江本梨園サンプルサイト" 
+                      class="img-fluid rounded shadow-sm">
+              </a>
+          </div>
+      </div>
+
+      <div class="row my-5 pb-5">
+          <div class="col-sm-6">
+              <h3 class="text-center">My Note App</h3>
+              <p>自分専用のメモアプリです。開発中に調べたことを記録しておくために作成しました。<br>
+                  Next.jsとデータベースとの連携学習も兼ねています。<br>
+                  クライアントサイドからデータベースへの追加、削除、編集の機能を実装しました。
+              </p>
+
+              <h5 class="fw-bold">技術スタック</h5>
+              <p class="mt-3">
+                  フロントエンド：HTML,CSS,Typescript,React,Next.js<br>
+                  バックエンド：Node.js<br>
+                  データベース：Supabase,PostgreSQL<br>
+                  インフラ：GitHub,Vercel
+              </p>
+          </div>
+          <div class="col-sm-6 d-flex justify-content-center align-items-center">
+              <a href="https://memo-app-three-green.vercel.app" target="_blank">
+                  <img src="img/スクリーンショット 2026-05-31 173711.png" 
+                      alt="My Note App" 
+                      class="img-fluid rounded shadow-sm">
+              </a>
+          </div>
+      </div>
+
+      <div class="row my-5 pb-5">
+          <div class="col-sm-6">
+              <h3 class="text-center">TETRIS</h3>
+              <p>大学在籍中に初めて作ったゲームです。<br>
+                  スマホで遊ぶことを想定したため、PCでは画面中央に表示されてしまうのは要改善です。<br>
+                  オリジナル機能として、上級者モード、爆弾落下、ポイントアップブロックを実装しました。
+              </p>
+
+              <h5 class="fw-bold">技術スタック</h5>
+              <p class="mt-3">
+                  フロントエンド：HTML,CSS,JavaScript<br>
+                  インフラ：さくらのレンタルサーバー
+              </p>
+          </div>
+          <div class="col-sm-6 d-flex justify-content-center align-items-center">
+              <a href="https://tomatobeaver78.sakura.ne.jp/tetoris" target="_blank">
+                  <img src="img/スクリーンショット 2026-05-31 180036.png" 
+                      alt="TETRIS" 
+                      class="img-fluid rounded shadow-sm">
+              </a>
+          </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- コンタクト -->
+  <section id="contact" class="py-5 bg-secondary text-white text-center">
+    <div class="container">
+      <h2 class="fw-bold">CONTACT</h2>
+      <p class="mt-3">📩 grom2018.0213@gmail.com</p>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer>
+    <div class="container">
+      <small>© 2026 MySite</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
